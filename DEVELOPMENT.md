@@ -1,4 +1,4 @@
-# Repository guidance
+# Development Guide
 
 ## Scope
 

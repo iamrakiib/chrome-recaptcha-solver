@@ -1,4 +1,4 @@
-# Google CAPTCHA Solver
+# reCAPTCHA Solver for Chrome
 
 A Chrome Manifest V3 extension that detects reCAPTCHA v2 challenges on Google pages, requests solution tokens through the 2Captcha API, and delivers the tokens to the page.
 
@@ -50,6 +50,7 @@ The project demonstrates browser extension architecture, asynchronous API integr
 | config.js | Private local configuration; created during setup and ignored by Git |
 | popup.html | Extension popup layout |
 | popup.js | Active-domain checks and live status display |
+| DEVELOPMENT.md | Development and maintenance guidance |
 
 ## Configuration
 

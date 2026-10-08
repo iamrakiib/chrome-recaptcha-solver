@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Google CAPTCHA Solver (2captcha)",
+  "name": "reCAPTCHA Solver for Chrome",
   "version": "1.7.0",
-  "description": "Solves reCAPTCHA v2 on Google search CAPTCHA pages.",
+  "description": "Automates reCAPTCHA v2 challenges on Google pages through the 2Captcha API.",
   "permissions": [
     "storage"
   ],
@@ -39,7 +39,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Captcha Solver"
+    "default_title": "reCAPTCHA Solver for Chrome"
   },
   "web_accessible_resources": [
     {
