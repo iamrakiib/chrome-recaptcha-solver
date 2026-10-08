@@ -1,0 +1,19 @@
+# Local configuration can contain an API key.
+/config.js
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated archives and logs
+*.zip
+*.log
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

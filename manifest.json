@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Google CAPTCHA Solver (2captcha)",
+  "version": "1.7.0",
+  "description": "Solves reCAPTCHA v2 on Google search CAPTCHA pages.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.google.com/*",
+    "https://2captcha.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.google.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://*.google.com/*"
+      ],
+      "js": [
+        "config.js",
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Captcha Solver"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js"
+      ],
+      "matches": [
+        "https://*.google.com/*"
+      ]
+    }
+  ]
+}
